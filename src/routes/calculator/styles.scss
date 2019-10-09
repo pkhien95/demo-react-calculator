@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+.container {
+  flex: 1;
+  display: flex;
+  background: $base-background-color;
+}
+
+.calculator-container {
+  width: 320px;
+  height: 440px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  tr {
+    height: 80px;
+  }
+
+  td {
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: center;
+    width: 80px;
+
+    &:hover {
+      cursor: pointer;
+      background: lightgray;
+    }
+  }
+
+  .input-row {
+
+    overflow: hidden;
+
+    td {
+      width: 100%;
+      height: 120px;
+      background: #433437;
+      text-align: right;
+    }
+
+    span {
+      width: 100%;
+      height: 100%;
+      border: none;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: right;
+      color: white;
+      white-space: nowrap;
+      padding: 10px;
+    }
+  }
+
+  .numeric-button {
+    background: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .operator-button {
+    background: #f2274f;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .clear-button {
+    background: white;
+    font-size: 32px;
+  }
+}
+
